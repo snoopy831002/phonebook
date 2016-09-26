@@ -26,7 +26,7 @@ typedef struct __LAST_NAME_ENTRY {
     struct __LAST_NAME_ENTRY *pNext;
 } entry;
 
-entry *findName(char lastname[], entry *pHead);
+entry *findName(char lastName[], entry *pHead);
 entry *append(char lastName[], entry *e);
 
 #endif

@@ -5,7 +5,7 @@
 #include "phonebook_opt.h"
 
 /* FILL YOUR OWN IMPLEMENTATION HERE! */
-entry *findName(char lastname[], entry *pHead)
+entry *findName(char lastName[], entry *pHead)
 {
     while (pHead != NULL) {
         if (strcasecmp(lastname, pHead->lastName) == 0)

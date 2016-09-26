@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
 #include "phonebook_opt.h"
 
 /* FILL YOUR OWN IMPLEMENTATION HERE! */
-entry *findName(char lastName[], entry *pHead)
+entry *findName(char lastname[], entry *pHead)
 {
     while (pHead != NULL) {
         if (strcasecmp(lastname, pHead->lastName) == 0)
@@ -22,5 +23,6 @@ entry *append(char lastName[], entry *e)
     e = e->pNext;
     strcpy(e->lastName, lastName);
     e->pNext = NULL;
+
     return e;
 }

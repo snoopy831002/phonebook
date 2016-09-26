@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
 #include "phonebook_opt.h"
 
 /* FILL YOUR OWN IMPLEMENTATION HERE! */
@@ -23,6 +22,5 @@ entry *append(char lastName[], entry *e)
     e = e->pNext;
     strcpy(e->lastName, lastName);
     e->pNext = NULL;
-
     return e;
 }

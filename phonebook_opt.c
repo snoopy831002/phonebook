@@ -6,6 +6,7 @@
 entry *findName(char lastName[], entry *pHead)
 {
     /* TODO: implement */
+    test
     return NULL;
 }
 

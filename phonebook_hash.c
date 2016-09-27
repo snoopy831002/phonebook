@@ -33,7 +33,6 @@ unsigned int djb2Hash(char *str)
     unsigned int hash = 5381;
     while(*str++) {
         hash = ((hash<<5)+hash)+*str++;
-        ffgtgt
     }
     return hash;
 }
